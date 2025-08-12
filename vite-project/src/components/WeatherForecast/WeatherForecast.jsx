@@ -1,7 +1,7 @@
 import React from 'react';
 import './WeatherForecast.css';
 
-const WeatherForecast = ({ day, img, imgAlt, conditions, time }) => {
+function WeatherForecast({ day, img, imgAlt, conditions, time }) {
   return (
     <div className="weather">
       <h2>{day}</h2>
@@ -10,6 +10,6 @@ const WeatherForecast = ({ day, img, imgAlt, conditions, time }) => {
       <p><span>time: </span>{time}</p>
     </div>
   );
-};
+}
 
 export default WeatherForecast;
